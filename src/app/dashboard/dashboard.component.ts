@@ -376,7 +376,7 @@ export class DashboardComponent {
         }
     
       ];
-    });
+    },1000);
   }
  
 }

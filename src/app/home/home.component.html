@@ -1,24 +1,11 @@
 <div class="basic-container">
-    <!--<mat-toolbar color="primary">
-      TopNav Menu Navigation Example
-    </mat-toolbar>-->
-    <mat-toolbar class="menu-bar mat-elevation-z1">
-      <div class="logo-signup"></div>
-      <span *ngFor="let item of menuHomeItems">
-        <span *ngIf="item.children && item.children.length > 0">
-          <button mat-button 
-          [disabled]="item.disabled">
-            {{item.displayName}}
-          </button>
-          
-        </span>
-        <span *ngIf="!item.children || item.children.length === 0">
-          <button mat-button class="customBtn" [routerLink]="item.route" (click)="login()">
-            {{item.displayName}}
-          </button>
-        </span>
+  <mat-toolbar class="menu-bar mat-elevation-z1">
+    <div class="logo-signup"></div>
+      <span>
+        <button mat-button class="customBtn" (click)="login()">
+          Log In
+        </button>
       </span>
-    </mat-toolbar>
-  </div>
-
-  <p>Home Screen</p>
+  </mat-toolbar>
+</div>
+<p>Home Screen</p>
