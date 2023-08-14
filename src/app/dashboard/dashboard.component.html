@@ -1,0 +1,152 @@
+<!--<div class="basic-container">
+  <mat-toolbar class="menu-bar mat-elevation-z1">
+    <div class="logo-signup"></div>
+    <span *ngFor="let item of menuDashItems">
+      <span *ngIf="item.children && item.children.length > 0">
+        <button mat-button
+        [disabled]="item.disabled">
+          {{item.displayName}}
+        </button>
+        
+      </span>
+      <span *ngIf="!item.children || item.children.length === 0">
+        <button mat-button color="primary" [routerLink]="item.route">
+          {{item.displayName}}
+        </button>
+      </span>
+    </span>
+  </mat-toolbar>
+</div>-->
+<!--<div class="basic-container">
+  <mat-toolbar class="menu-bar mat-elevation-z1">
+  <button mat-button [matMenuTriggerFor]="animals">Animal index</button>
+
+  <mat-menu #animals="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+    <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+  </mat-menu>
+
+  <mat-menu #vertebrates="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+    <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+    <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+    <button mat-menu-item>Birds</button>
+    <button mat-menu-item>Mammals</button>
+  </mat-menu>
+
+  <mat-menu #invertebrates="matMenu">
+    <button mat-menu-item>Insects</button>
+    <button mat-menu-item>Molluscs</button>
+    <button mat-menu-item>Crustaceans</button>
+    <button mat-menu-item>Corals</button>
+    <button mat-menu-item>Arachnids</button>
+    <button mat-menu-item>Velvet worms</button>
+    <button mat-menu-item>Horseshoe crabs</button>
+  </mat-menu>
+
+  <mat-menu #fish="matMenu">
+    <button mat-menu-item>Baikal oilfish</button>
+    <button mat-menu-item>Bala shark</button>
+    <button mat-menu-item>Ballan wrasse</button>
+    <button mat-menu-item>Bamboo shark</button>
+    <button mat-menu-item>Banded killifish</button>
+  </mat-menu>
+
+  <mat-menu #amphibians="matMenu">
+    <button mat-menu-item>Sonoran desert toad</button>
+    <button mat-menu-item>Western toad</button>
+    <button mat-menu-item>Arroyo toad</button>
+    <button mat-menu-item>Yosemite toad</button>
+  </mat-menu>
+
+  <mat-menu #reptiles="matMenu">
+    <button mat-menu-item>Banded Day Gecko</button>
+    <button mat-menu-item>Banded Gila Monster</button>
+    <button mat-menu-item>Black Tree Monitor</button>
+    <button mat-menu-item>Blue Spiny Lizard</button>
+    <button mat-menu-item disabled>Velociraptor</button>
+  </mat-menu>
+  </mat-toolbar>
+</div>-->
+
+<div class="basic-container">
+  
+  <mat-toolbar class="menu-bar mat-elevation-z1">
+    <div class="logo-signup1"></div>
+  <button class="actionBtn" mat-button [matMenuTriggerFor]="menu01">Menu 01</button>
+  <button class="actionBtn" mat-button [matMenuTriggerFor]="menu02">Menu 02</button>
+  <button class="actionBtn" mat-button [matMenuTriggerFor]="menu03">Menu 03</button>
+  <button class="actionBtn" mat-button (click)="logout()">Logout</button>
+
+  <mat-menu #menu01="matMenu">
+    <button class="actionBtn" mat-menu-item [matMenuTriggerFor]="submenu01">Sub Menu 01</button>
+    <button class="actionBtn" mat-menu-item [matMenuTriggerFor]="submenu02">Sub Menu 02</button>
+  </mat-menu>
+
+  <mat-menu #submenu01="matMenu">
+    <button class="actionBtn" mat-menu-item [matMenuTriggerFor]="fish">Sub sub Menu 01</button>
+    <button class="actionBtn" mat-menu-item [matMenuTriggerFor]="amphibians">Sub sub Menu 01</button>
+    <button class="actionBtn" mat-menu-item [matMenuTriggerFor]="reptiles">Sub sub Menu 01</button>
+    <button class="actionBtn" mat-menu-item>Birds</button>
+    <button class="actionBtn" mat-menu-item>Mammals</button>
+  </mat-menu>
+
+  <mat-menu #submenu02="matMenu">
+    <button class="actionBtn" mat-menu-item>Insects</button>
+    <button class="actionBtn" mat-menu-item>Molluscs</button>
+    <button class="actionBtn" mat-menu-item>Crustaceans</button>
+    <button class="actionBtn" mat-menu-item>Corals</button>
+    <button class="actionBtn" mat-menu-item>Arachnids</button>
+    <button class="actionBtn" mat-menu-item>Velvet worms</button>
+    <button class="actionBtn" mat-menu-item>Horseshoe crabs</button>
+  </mat-menu>
+
+  <mat-menu #fish="matMenu">
+    <button class="actionBtn" mat-menu-item>Baikal oilfish</button>
+    <button class="actionBtn" mat-menu-item>Bala shark</button>
+    <button class="actionBtn" mat-menu-item>Ballan wrasse</button>
+    <button class="actionBtn" mat-menu-item>Bamboo shark</button>
+    <button class="actionBtn" mat-menu-item>Banded killifish</button>
+  </mat-menu>
+
+  <mat-menu #amphibians="matMenu">
+    <button class="actionBtn" mat-menu-item>Sonoran desert toad</button>
+    <button class="actionBtn" mat-menu-item>Western toad</button>
+    <button class="actionBtn" mat-menu-item>Arroyo toad</button>
+    <button class="actionBtn" mat-menu-item>Yosemite toad</button>
+  </mat-menu>
+
+  <mat-menu #reptiles="matMenu">
+    <button class="actionBtn" mat-menu-item>Banded Day Gecko</button>
+    <button class="actionBtn" mat-menu-item>Banded Gila Monster</button>
+    <button class="actionBtn" mat-menu-item>Black Tree Monitor</button>
+    <button class="actionBtn" mat-menu-item>Blue Spiny Lizard</button>
+    <!--<button class="actionBtn" mat-menu-item disabled>Velociraptor</button>-->
+  </mat-menu>
+
+
+
+  <mat-menu #menu02="matMenu">
+    <button class="actionBtn" mat-menu-item [matMenuTriggerFor]="submenu03">Sub Menu 03</button>
+    <button class="actionBtn" mat-menu-item [matMenuTriggerFor]="submenu04">Sub Menu 04</button>
+  </mat-menu>
+
+  <mat-menu #submenu03="matMenu">
+    <button class="actionBtn" mat-menu-item>Sub sub Menu 01</button>
+    <button class="actionBtn" mat-menu-item >Sub sub Menu 01</button>
+    <button class="actionBtn" mat-menu-item >Sub sub Menu 01</button>
+  </mat-menu>
+
+  <mat-menu #submenu04="matMenu">
+    <button class="actionBtn" mat-menu-item>Birds</button>
+    <button class="actionBtn" mat-menu-item>Mammals</button>
+  </mat-menu>
+
+  <mat-menu #menu03="matMenu">
+    <button class="actionBtn" mat-menu-item>Sub Menu 05</button>
+    <button class="actionBtn" mat-menu-item>Sub Menu 06</button>
+  </mat-menu>
+  </mat-toolbar>
+
+  
+</div>

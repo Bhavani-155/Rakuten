@@ -1,9 +1,48 @@
-
+@import "../theme/scss/styles-variables.scss";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
  .logo-signup {
     background: transparent url(../assets/Images/logo.png) no-repeat;
     height: 30px;
     width: 100%;
     background-size: auto 30px;
     margin-right: 0;
-    background-position: center;
+    //background-position: center;
   }
+
+  html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  background: #e2e2e2;
+}
+.app-header {
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+.customBtn {
+  background-color: $light-red !important;
+  color:#ffffff;
+  font-weight: bold;
+}
+
+.input-text {
+  caret-color: $light-red !important;
+}
+
+.actionBtn {
+  &:active, &:hover, &:after {
+    background-color: $light-red !important;
+    color:#ffffff;
+  }
+  
+}

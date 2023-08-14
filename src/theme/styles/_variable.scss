@@ -1,0 +1,44 @@
+$font-family: 'Ubuntu-reg';
+
+$toolbar-height: 75px;
+$horizontal-menu-height: $toolbar-height;
+
+$sidenav-width: 250px;
+$sidenav-user-block-height: 156px;
+$mini-sidenav-user-block-height: 70px;
+
+$flex-distance: 8px;
+$inner-sidenav-content-padding: $flex-distance;
+
+//Login, Register, Errors box
+$box-height: 186px;
+$box-position: 34px;
+$register-box-height: 300px;
+
+$footer-height: 28px;
+$footer-height-total:28px;
+
+$text-primary: #03aa94;
+$text-accent: #e7405b;
+$text-warn: #c41230;
+
+$bg-white: #ffffff;
+$bg-blue:#00008B;
+$bg-table-detail: #e9f1f0;
+$bg-light-grey: #e9f1f0;
+$bg-dark-grey: #808080;
+$bg-footer: #dadcdc;
+
+$color-good: #03aa94;
+$color-bad: #c41230;
+$color-alert: rgb(241, 197, 92);
+$color-info: rgb(82, 177, 206);
+$color-cancel: rgb(210,105,30);
+$color-sheduled:rgb(184, 241, 241);
+
+$bg-inner-table-header: #03aa9429;
+  $bg-dark: black;
+
+
+  $text-active: #008000;
+  $text-pending: #03aa94;
